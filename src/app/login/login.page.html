@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Hệ thống ATM</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="mau">
+	<ion-label class="login" text-center><h1>Đăng nhập</h1></ion-label>
+	<ion-list>
+		<ion-item>
+			<ion-label class="tk" fixed>Username: </ion-label>
+			<ion-input class="nhap" [(ngModel)]="username" type="text" placeholder="Nhập tên đăng nhập"
+				value=""></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label class="tk" fixed>Password: </ion-label>
+			<ion-input class="nhap" [(ngModel)]="password" type="password" placeholder="Nhập mật khẩu" value="1234"></ion-input>
+		</ion-item>
+		<ion-list>
+      <ion-button color="primary" class="okk" (click)="login()">LOGIN</ion-button>
+      <ion-button color="secondary" class="menu" (click)="them()">Thêm</ion-button>
+      <ion-button color="tertiary" class="menu" (click)="xoa()">Xóa</ion-button>
+      <ion-button color="success" class="menu" (click)="xemtatca()">Xem tất cả</ion-button>
+
+		</ion-list>
+	</ion-list>
+</ion-content>

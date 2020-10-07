@@ -1,0 +1,8 @@
+{
+  "name": "ATM",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

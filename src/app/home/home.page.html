@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Hệ thống ATM</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+    <h3 class="account">TÀI KHOẢN</h3>
+    <h3 style="text-align: center">{{ dataReceive.username}}</h3>
+    <ion-list>
+      <ion-button routerDirection="forward" (click)="detail()" class="btn-login" type="submit" color="danger"
+      expand="block">1.Xem thông tin
+      tài khoản
+    </ion-button>
+    <ion-button routerDirection="forward" (click)="takePhoto()" class="btn-login" type="submit" color="danger"
+      expand="block">2.Chụp ảnh
+      
+    </ion-button>
+    <ion-button routerDirection="forward" (click)="exit()" class="btn-login" type="submit" color="danger"
+      expand="block">3.Thoát
+    </ion-button>
+    </ion-list>
+    
+  
+</ion-content>
